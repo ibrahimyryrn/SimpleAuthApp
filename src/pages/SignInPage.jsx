@@ -20,7 +20,10 @@ function SignInPage({ setIsAuthenticated, setIsAuth }) {
 
       // Gerçek kimlik doğrulamada token burada elde edilir
       if (response.data.password.length > 0) {
-        // setToken("fake-jwt-token");  Normalde backend'den alınan gerçek token buraya konur
+        // Kullanıcı adı ve şifreyi localStorage'a kaydet
+        localStorage.setItem("username", username);
+        localStorage.setItem("password", password);
+
         alert("Valid credentials");
         setIsAuthenticated(true);
         setIsAuth(true);
