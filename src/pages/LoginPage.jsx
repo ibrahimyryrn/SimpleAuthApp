@@ -43,7 +43,7 @@ function LoginPage({ setIsAuth, setIsAuthenticated }) {
               <label>Username</label>
               <input
                 type="text"
-                value={username}
+                value="user"
                 onChange={(e) => setUserName(e.target.value)}
               />
             </div>
@@ -51,7 +51,7 @@ function LoginPage({ setIsAuth, setIsAuthenticated }) {
               <label>Password</label>
               <input
                 type="password"
-                value={password}
+                value="password"
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
