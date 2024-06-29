@@ -4,8 +4,8 @@ import "./LoginPage.css";
 import { useNavigate } from "react-router-dom";
 
 function LoginPage({ setIsAuth, setIsAuthenticated }) {
-  const [username, setUserName] = useState("user");
-  const [password, setPassword] = useState("password");
+  const [username, setUserName] = useState("");
+  const [password, setPassword] = useState("");
   // const [token, setToken] = useState(false);
 
   const navigate = useNavigate();
@@ -43,7 +43,7 @@ function LoginPage({ setIsAuth, setIsAuthenticated }) {
               <label>Username</label>
               <input
                 type="text"
-                value="user"
+                value={username}
                 onChange={(e) => setUserName(e.target.value)}
               />
             </div>
@@ -51,7 +51,7 @@ function LoginPage({ setIsAuth, setIsAuthenticated }) {
               <label>Password</label>
               <input
                 type="password"
-                value="password"
+                value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
