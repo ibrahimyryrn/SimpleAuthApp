@@ -4,8 +4,8 @@ import "./LoginPage.css";
 import { useNavigate } from "react-router-dom";
 
 function LoginPage({ setIsAuth, setIsAuthenticated }) {
-  const [username, setUserName] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUserName] = useState("user");
+  const [password, setPassword] = useState("password");
   // const [token, setToken] = useState(false);
 
   const navigate = useNavigate();
